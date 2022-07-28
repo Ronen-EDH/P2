@@ -19,43 +19,45 @@
     ></script>
   </head>
   <body>
-    <header>
+    <nav>
       <img src="images/logo/Booki.png" alt="_Boki logo" />
-      <div class="main-nav">
-        <nav>
-          <h2>Find a place for your dream vacation</h2>
-          <p>Downtown or in nature</p>
-          <form action="search" method="GET">
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="text" name="search_query" />
-            <input type="submit" value="Search" />
-          </form>
-          <div class="filters">
-            <h3>Filters</h3>
-            <button class="button button1">
-              <i class="fa-solid fa-money-bill-wave"></i> Low cost
-            </button>
-            <button class="button button2">
-              <i class="fa-solid fa-child-reaching"></i> Family-friendly
-            </button>
-            <button class="button button2">
-              <i class="fa-solid fa-heart"></i> Romantic
-            </button>
-            <button class="button button2">
-              <i class="fa-solid fa-dog"></i> Pets allowed
-            </button>
-          </div>
-        </nav>
+      <div class="nav-buttons">
+        <a class="nav-item active" href="#"><p>Accommodations</p></a>
+        <a class="nav-item" href="#"><p>Activities</p></a>
+      </div>
+    </nav>
+
+    <header>
+      <h2>Find a place for your dream vacation</h2>
+      <p>Downtown or in nature</p>
+      <form action="search" method="GET">
+        <i class="fa-solid fa-location-dot"></i>
+        <input
+          type="text"
+          placeholder="Marseille, France"
+          name="search_query"
+        />
+        <input type="submit" value="Search" />
+      </form>
+      <div class="filters">
+        <h3>Filters</h3>
+        <button class="button button1">
+          <i class="fa-solid fa-money-bill-wave"></i> Low cost
+        </button>
+        <button class="button button2">
+          <i class="fa-solid fa-child-reaching"></i> Family-friendly
+        </button>
+        <button class="button button2">
+          <i class="fa-solid fa-heart"></i> Romantic
+        </button>
+        <button class="button button2">
+          <i class="fa-solid fa-dog"></i> Pets allowed
+        </button>
+
         <div class="info">
           <i class="fa-solid fa-circle-info"></i>
           <p>More than 500 accommodations are avalible in this city.</p>
         </div>
-      </div>
-      <div class="sub-nav">
-        <nav>
-          <a href="#"><p>Accommodations</p></a>
-          <a href="#"><p>Activities</p></a>
-        </nav>
       </div>
     </header>
   </body>
