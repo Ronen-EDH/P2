@@ -31,27 +31,26 @@
     <header>
       <h2>Find a place for your dream vacation</h2>
       <p>Downtown or in nature</p>
-      <form action="search" method="GET">
+      <form class="search-bar" action="search" method="GET">
         <i class="fa-solid fa-location-dot"></i>
-        <input
-          type="text"
+        <input class="search-input-field" type="text"
           placeholder="Marseille, France"
           name="search_query"
         />
-        <input type="submit" value="Search" />
+        <input class="search-button" type="submit" value="Search" />
       </form>
       <div class="filters">
         <h3>Filters</h3>
-        <button class="button button1">
+        <button class="filter-button">
           <i class="fa-solid fa-money-bill-wave"></i> Low cost
         </button>
-        <button class="button button2">
+        <button class="filter-button">
           <i class="fa-solid fa-child-reaching"></i> Family-friendly
         </button>
-        <button class="button button2">
+        <button class="filter-button">
           <i class="fa-solid fa-heart"></i> Romantic
         </button>
-        <button class="button button2">
+        <button class="filter-button">
           <i class="fa-solid fa-dog"></i> Pets allowed
         </button>
       </div>

@@ -9,7 +9,7 @@
 }
 
 * {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .wrapper {
@@ -33,7 +33,7 @@ nav {
   padding: 15px;
   border-top-style: solid;
   border-top-width: 2px;
-  border-top-color: white;
+  border-top-color: #0065fc00;
 }
 
 .nav-item:visited {
@@ -55,9 +55,65 @@ nav {
   width: 50%;
   height: auto;
 } */
+.search-bar {
+  display: flex;
+  width: max-content;
+  margin: 10px;
+}
+
+.search-button {
+  background-color: var(--primary-color);
+  color: white;
+  border-style: none;
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  padding: 10px;
+}
+
+.search-input-field {
+  border-color: var(--background-color);
+  border-style: solid;
+}
+
+.fa-solid.fa-location-dot {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border: 2px solid var(--background-color);
+  background-color: var(--background-color);
+  border-top-left-radius: 80px 80px;
+  border-bottom-left-radius: 80px 80px;
+  width: 40px;
+  padding: 10px;
+}
 
 .filters {
   display: flex;
+  align-items: center;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-color: var(--background-color);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 0px;
+}
+
+.fa-solid.fa-money-bill-wave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  background-color: var(--secondary-color);
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+  color: var(--primary-color);
 }
 
 .info {
