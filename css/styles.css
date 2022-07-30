@@ -42,6 +42,7 @@ nav {
 
 .nav-item:link {
   text-decoration: none;
+  color: black;
 }
 
 .nav-item:hover {
@@ -90,18 +91,25 @@ nav {
 .filters {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .filter-button {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: white;
   border-color: var(--background-color);
   border-style: solid;
   border-width: 3px;
   border-radius: 50px;
+  width: fit-content;
+  overflow: visible;
   margin: 10px;
-  padding: 0px;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 10px;
+  font-weight: 700;
 }
 
 .fa-solid.fa-money-bill-wave {
@@ -113,6 +121,12 @@ nav {
   height: 50px;
   border-radius: 50%;
   width: 50px;
+  color: var(--primary-color);
+  margin-left: -15px;
+}
+
+.filter-button:hover {
+  background-color: var(--background-color);
   color: var(--primary-color);
 }
 
@@ -131,5 +145,31 @@ nav {
   color: var(--background-color);
   font-size: 30px;
   padding: 10px;
-  margin-left: -28px;
+  margin-left: -28.5px;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.Accommadations-in-Marseille {
+  background-color: var(--background-color);
+  width: 60%;
+  height: 500px;
+}
+
+.Most-popular {
+  background-color: var(--background-color);
+  width: 30%;
+  height: 500px;
+}
+
+.card {
+  height: 150px;
+  width: 300px;
+}
+
+/* .card > img {
+  height: fit-content;
+} */
