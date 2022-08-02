@@ -36,11 +36,11 @@ nav {
   border-top-color: #0065fc00;
 }
 
-.nav-item:visited {
+:visited {
   color: black;
 }
 
-.nav-item:link {
+:link {
   text-decoration: none;
   color: black;
 }
@@ -154,33 +154,33 @@ nav {
   justify-content: space-between;
 }
 
-.Accommodations-in-Marseille {
+.accommodations-in-marseille {
   background-color: var(--background-color);
   width: 64%;
   height: 600px;
   padding: 10px;
 }
 
-.Most-popular {
+.most-popular {
+  display: flex;
+  flex-direction: column;
   background-color: var(--background-color);
   width: 32%;
-  height: 500px;
+  height: 600px;
 }
 
-.card {
+.card-accommodations {
   display: flex;
   flex-wrap: wrap;
   height: 40%;
   width: 30%;
-  /* border-style: solid;
-  border-color: #0065fc; */
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
 
-.card img {
+.card-accommodations img {
   height: 60%;
   width: 100%;
   object-fit: cover;
@@ -189,7 +189,7 @@ nav {
   padding: 5px;
 }
 
-.card p {
+.card-accommodations p {
   font-size: 15px;
   margin: 0;
 }
@@ -218,6 +218,46 @@ h4 {
   color: var(--background-color);
 }
 
+.card-accommodations:hover {
+  /* color: var(--primary-color); */
+  box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
+}
+
+.card-most-popular {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 30%;
+  width: 90%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card-most-popular img {
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px;
+}
+
+.container-most-popular {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 5px;
+  margin-left: 10px;
+  padding: 0px;
+  height: 100%;
+  width: 50%;
+}
+/* p {
+  font-weight: 700;
+} */
 /* .card > img {
   height: fit-content;
 } */
