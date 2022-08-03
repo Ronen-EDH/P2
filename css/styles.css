@@ -14,8 +14,8 @@
 
 .wrapper {
   /* padding: 20%; */
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 nav {
@@ -155,10 +155,22 @@ nav {
 }
 
 .accommodations-in-marseille {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: var(--background-color);
   width: 64%;
   height: 600px;
   padding: 10px;
+}
+
+.accommodations-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  height: 80%;
 }
 
 .most-popular {
@@ -172,7 +184,7 @@ nav {
 .card-accommodations {
   display: flex;
   flex-wrap: wrap;
-  height: 40%;
+  height: 46%;
   width: 30%;
   border-radius: 20px;
   background-color: white;
@@ -192,18 +204,6 @@ nav {
 .card-accommodations p {
   font-size: 15px;
   margin: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 5px;
-  margin-top: -10px;
-  margin-left: 10px;
-  padding: 0px;
-  height: 40%;
-  width: 100%;
 }
 
 h4 {
@@ -244,17 +244,31 @@ h4 {
   padding: 5px;
 }
 
-.container-most-popular {
+.container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 5px;
+  margin-top: -10px;
+  margin-left: 10px;
+  padding: 0px;
+  height: 40%;
+  width: 100%;
+}
+
+.container.img-left {
+  flex-wrap: wrap;
   margin: 5px;
   margin-left: 10px;
   padding: 0px;
   height: 100%;
   width: 50%;
 }
+
+.accommodation-header {
+  align-self: flex-start;
+}
+
 /* p {
   font-weight: 700;
 } */
