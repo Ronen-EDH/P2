@@ -222,6 +222,8 @@ nav {
 }
 
 h4 {
+  font-size: 16px;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -344,6 +346,34 @@ h2 {
 .park-height {
   height: 47.62%;
 }
+
+footer {
+  display: flex;
+  background-color: var(--background-color);
+  padding: 4%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+ul > a {
+  margin-top: 15px;
+}
+
+ul > a:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 /* p {
   font-weight: 700;
 } */
