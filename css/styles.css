@@ -18,6 +18,10 @@
   margin-right: 3.5%;
 }
 
+section {
+  margin-bottom: 5%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -188,19 +192,22 @@ nav {
   position: relative;
 }
 
-.card-accommodations {
+.card {
   display: flex;
-  flex-wrap: wrap;
-  height: 189px;
-  width: 255px;
   border-radius: 20px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+}
+
+.accommodations {
+  flex-wrap: wrap;
+  height: 189px;
+  width: 255px;
   margin-bottom: 4%;
 }
 
-.card-accommodations img {
+.card img {
   height: 60%;
   width: 100%;
   object-fit: cover;
@@ -209,7 +216,7 @@ nav {
   padding: 5px;
 }
 
-.card-accommodations p {
+.card.accommodations p {
   font-size: 15px;
   margin: 0;
 }
@@ -230,7 +237,7 @@ h2 {
   color: var(--background-color);
 }
 
-.card-accommodations:hover {
+.card.accommodations:hover {
   /* color: var(--primary-color); */
   box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
 }
@@ -244,20 +251,15 @@ h2 {
   position: absolute;
 } */
 
-.card-most-popular {
-  display: flex;
+.card.most-popular {
   flex-wrap: wrap;
-  flex-direction: column;
   height: 25%;
   width: 100%;
-  border-radius: 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
   margin-top: -30%;
+  padding: 0;
 }
 
-.card-most-popular img {
+.card.most-popular img {
   height: 100%;
   width: 40%;
   object-fit: cover;
@@ -287,6 +289,14 @@ h2 {
   width: 50%;
 }
 
+.activities > .container {
+  display: inline;
+  height: 50px;
+  margin: 5px;
+  padding: 8px;
+  width: 100%;
+}
+
 .accommodation-header {
   align-self: flex-start;
   margin: 0;
@@ -297,29 +307,41 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
   width: 100%;
   height: 500px;
-  border-color: #0065fc;
-  border-style: solid;
+  margin-top: 1%;
+  /* border-color: #0065fc;
+  border-style: solid; */
 }
 
-.card-accommodations.fullheight {
+.activities img {
+  height: calc(100% - 50px);
+}
+
+.activities {
+  flex-wrap: wrap;
+  width: 22.5%;
+}
+
+.fullheight {
   height: 100%;
 }
 
-.card-accommodations.fort-height {
+.fort-height {
   height: 52.38%;
 }
 
-.card-accommodations.island-height {
+.island-height {
   height: 38.09%;
 }
 
-.card-accommodations.notredame-height {
+.notredame-height {
   height: 42.85%;
 }
 
-.card-accommodations.park-height {
+.park-height {
   height: 47.62%;
 }
 /* p {
