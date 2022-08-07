@@ -254,6 +254,7 @@ h2 {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  margin-top: -30%;
 }
 
 .card-most-popular img {
@@ -295,12 +296,32 @@ h2 {
 .activities-wrapper {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   height: 500px;
   border-color: #0065fc;
   border-style: solid;
 }
 
+.card-accommodations.fullheight {
+  height: 100%;
+}
+
+.card-accommodations.fort-height {
+  height: 52.38%;
+}
+
+.card-accommodations.island-height {
+  height: 38.09%;
+}
+
+.card-accommodations.notredame-height {
+  height: 42.85%;
+}
+
+.card-accommodations.park-height {
+  height: 47.62%;
+}
 /* p {
   font-weight: 700;
 } */
