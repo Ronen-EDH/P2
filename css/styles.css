@@ -180,7 +180,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: var(--background-color);
   width: 64.6%;
   /* height: fit-content; */
@@ -194,7 +194,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
-  height: 79%;
+  /* height: 79%; */
 }
 
 .most-popular {
@@ -207,8 +207,19 @@ nav {
   width: 32.3%;
   border-radius: 25px;
   padding: 40px;
-  position: relative;
 }
+
+/* .most-popular-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  height: fit-content;
+  background-color: var(--background-color);
+  width: 32.3%;
+  border-radius: 25px;
+  padding: 40px;
+} */
 
 .card {
   display: flex;
@@ -221,9 +232,15 @@ nav {
 .accommodations {
   flex-wrap: wrap;
   height: 189px;
-  width: 255px;
+  width: 252px;
   margin-bottom: 4%;
   font-size: 13px;
+}
+
+@media all and (max-width: 1408px) {
+  .accommodations {
+    width: 25vw;
+  }
 }
 
 .card img {
@@ -305,7 +322,7 @@ h2 {
   justify-content: space-evenly;
   margin: 5px;
   margin-top: -10px;
-  margin-left: 10px;
+  margin-left: 14px;
   padding: 0px;
   height: 40%;
   width: 100%;
@@ -317,7 +334,7 @@ h2 {
   margin-left: 10px;
   padding: 0px;
   height: 100%;
-  width: 50%;
+  width: 55%;
 }
 
 .activities > .container {
@@ -326,12 +343,6 @@ h2 {
   margin: 5px;
   padding: 8px;
   width: 100%;
-}
-
-.accommodation-header {
-  align-self: flex-start;
-  margin: 0;
-  margin-bottom: 15px;
 }
 
 .activities-wrapper {
