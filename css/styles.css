@@ -30,19 +30,32 @@ section {
 nav {
   display: flex;
   justify-content: space-between;
+  height: 50px;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 .nav-buttons {
   display: flex;
   flex-direction: row;
+  margin-top: -45px;
 }
 .nav-item {
   /* padding-left: 30px;
   padding-top: 15px; */
-  padding: 15px;
+  padding: 33px;
+  padding-top: 43px;
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #0065fc00;
+}
+
+nav > img {
+  margin-left: -15px;
+  /* height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px; */
 }
 
 :visited {
@@ -419,6 +432,7 @@ ul > a:first-child {
 .nav-item > p {
   font-size: 17px;
   font-weight: 500;
+  margin: 0;
 }
 
 header > p {
