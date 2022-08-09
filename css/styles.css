@@ -200,7 +200,7 @@ nav {
 .most-popular {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-content: space-between;
   /* height: fit-content; */
   background-color: var(--background-color);
@@ -209,17 +209,11 @@ nav {
   padding: 40px;
 }
 
-/* .most-popular-wrapper {
+.most-popular-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-content: space-between;
-  height: fit-content;
-  background-color: var(--background-color);
-  width: 32.3%;
-  border-radius: 25px;
-  padding: 40px;
-} */
+}
 
 .card {
   display: flex;
@@ -298,7 +292,7 @@ h2 {
   flex-wrap: wrap;
   height: 25%;
   width: 100%;
-  margin-top: -30%;
+  /* margin-top: -30%; */
   padding: 0;
   font-size: 13px;
 }
