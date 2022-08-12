@@ -50,9 +50,20 @@ nav {
   border-top-color: #0065fc00;
 }
 
-nav > img {
+.logo-wrapper {
+  width: 112px;
   margin-left: -15px;
+  margin-top: -8px;
 }
+
+.img-logo {
+  width: 100%;
+  height: auto;
+}
+
+/* nav > img {
+  margin-left: -15px;
+} */
 
 :visited {
   color: black;
@@ -134,6 +145,13 @@ nav > img {
   font-weight: 800;
 }
 
+.fa-solid.fa-location-dot,
+.fa-solid.filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .filter-icon {
   border-style: none;
   background-color: var(--secondary-color);
@@ -142,13 +160,6 @@ nav > img {
   width: 50px;
   color: var(--primary-color);
   margin-left: -15px;
-}
-
-.fa-location-dot,
-.filter-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .filter-button:hover {
@@ -202,7 +213,7 @@ nav > img {
 
 .accommodations-main {
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* width: 64.6%; */
   /* height: fit-content; */
   flex: 2;
@@ -243,7 +254,7 @@ nav > img {
 .accommodation {
   flex-wrap: wrap;
   height: 203px;
-  width: 248px;
+  width: 244px;
   margin-bottom: 4%;
   font-size: 13px;
 }
@@ -456,14 +467,70 @@ header > p {
   font-size: clamp(90%, 1.5vw, 130%);
 } */
 
-/* @media all and (max-width: 1408px) {
-  .accommodations {
-    width: 25vw;
+@media (max-width: 1408px) {
+  .accommodations-card-wrapper {
+    justify-content: space-evenly;
   }
-  .card.most-popular {
+}
+@media (min-width: 1801px) {
+  .accommodations-card-wrapper {
+    column-gap: 15%;
+  }
+}
+
+@media (max-width: 768px), (orientation: portrait) {
+  .wrapper {
+    margin: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 25px;
+    height: auto;
+  }
+
+  .logo-wrapper {
+    margin: 0;
+  }
+
+  nav > img {
+    height: 50%;
+    width: auto;
+  }
+
+  .nav-item {
+    border-style: none;
+    padding: 0;
+    padding-bottom: 43px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #0065fc00;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-item:hover {
+    border-style: none;
+    color: var(--primary-color);
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: var(--primary-color);
+  }
+
+  .nav-buttons {
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* .card.most-popular {
     height: 29vh;
-  }
-} */
+  } */
+
 /* p {
   font-weight: 700;
 } */
