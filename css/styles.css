@@ -9,6 +9,7 @@
 }
 
 * p {
+  margin: 0;
   font-size: 18px;
   font-weight: 500;
 }
@@ -18,7 +19,6 @@
 } */
 
 .wrapper {
-  /* padding: 20%; */
   margin-left: 3.5%;
   margin-right: 3.5%;
 }
@@ -52,10 +52,6 @@ nav {
 
 nav > img {
   margin-left: -15px;
-  /* height: auto;
-  width: auto;
-  max-width: 300px;
-  max-height: 300px; */
 }
 
 :visited {
@@ -74,10 +70,6 @@ nav > img {
   border-top-color: var(--primary-color);
 }
 
-/* .img-logo {
-  width: 50%;
-  height: auto;
-} */
 .search-bar {
   display: flex;
   width: 420px;
@@ -105,10 +97,7 @@ nav > img {
   padding-left: 13px;
 }
 
-.fa-solid.fa-location-dot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.fa-location-dot {
   font-size: 18px;
   border: 2px solid var(--background-color);
   background-color: var(--background-color);
@@ -119,7 +108,7 @@ nav > img {
   flex: 1;
 }
 
-.filters {
+.filters-wrapper {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -128,26 +117,24 @@ nav > img {
 .filter-button {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: white;
   border-color: var(--background-color);
   border-style: solid;
   border-width: 3px;
   border-radius: 50px;
-  width: fit-content;
-  overflow: visible;
   margin: 10px;
   padding: 0;
   padding-right: 20px;
   padding-left: 10px;
-  font-weight: 800;
   font-size: 18px;
 }
 
-.filter-icon.fa-solid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.filter-button > p {
+  margin-left: 12px;
+  font-weight: 800;
+}
+
+.filter-icon {
   border-style: none;
   background-color: var(--secondary-color);
   height: 50px;
@@ -157,53 +144,72 @@ nav > img {
   margin-left: -15px;
 }
 
+.fa-location-dot,
+.filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .filter-button:hover {
   background-color: var(--background-color);
   color: var(--primary-color);
 }
 
-.info {
+.info-wrapper {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 15px;
   margin-left: 12px;
   width: 45%;
 }
 
-.fa-solid.fa-info {
+.info-icon-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* .fa-solid.fa-info {
   display: flex;
   align-items: center;
   color: var(--primary-color);
+} */
+
+.fa-info {
+  margin-left: 1.5px;
+  color: var(--primary-color);
 }
+
 .fa-regular.fa-circle {
-  display: flex;
-  align-items: center;
   color: var(--background-color);
-  font-size: 30px;
-  padding: 10px;
-  margin-left: -28.5px;
+  font-size: 33px;
+  margin-top: -8px;
+  margin-left: -19.5px;
+  margin-right: 10px;
 }
 
 .main {
   display: flex;
   flex-direction: row;
 }
-
-.accommodations-in-marseille {
+.section-wrapper {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
   background-color: var(--background-color);
+  border-radius: 25px;
+  padding: 40px;
+}
+
+.accommodations-main {
+  flex-wrap: wrap;
+  justify-content: space-between;
   /* width: 64.6%; */
   /* height: fit-content; */
-  padding: 40px;
-  border-radius: 25px;
   flex: 2;
   margin-right: 3%;
 }
 
-.accommodations-wrapper {
+.accommodations-card-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -211,20 +217,15 @@ nav > img {
   /* height: 79%; */
 }
 
-.most-popular-section {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
+.most-popular-main {
   align-content: space-between;
-  /* height: fit-content; */
-  background-color: var(--background-color);
-  /* width: 32.3%; */
-  border-radius: 25px;
-  padding: 40px;
   flex: 1;
+  /* justify-content: space-between;
+  height: fit-content;
+  width: 32.3%; */
 }
 
-.most-popular-wrapper {
+.most-popular-card-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -239,7 +240,7 @@ nav > img {
   transition: 0.3s;
 }
 
-.accommodations {
+.accommodation {
   flex-wrap: wrap;
   height: 203px;
   width: 248px;
@@ -247,16 +248,22 @@ nav > img {
   font-size: 13px;
 }
 
-.card img {
+.accommodation img {
   height: 60%;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding: 5px;
 }
 
-.card.accommodations p {
+.accommodation img,
+.activities img {
+  width: 100%;
+  border-top-right-radius: 20px;
+}
+.card img {
+  object-fit: cover;
+  padding: 5px;
+  border-top-left-radius: 20px;
+}
+
+.accommodation.card p {
   font-size: 15px;
   margin: 0;
 }
@@ -284,16 +291,16 @@ h2 {
   color: var(--primary-color);
 }
 
-.hollow ~ .fa-solid.fa-star {
+.hollow-rating ~ .fa-solid.fa-star {
   color: var(--background-color);
 }
 
-.card.accommodations:hover {
+.card:hover {
   /* color: var(--primary-color); */
   box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
 }
 
-.most-popular-section > h2 {
+.most-popular-main > h2 {
   display: flex;
   justify-content: space-between;
 }
@@ -302,7 +309,7 @@ h2 {
   position: absolute;
 } */
 
-.card.most-popular {
+.most-popular {
   flex-wrap: wrap;
   flex-direction: column;
   /* height: 25%; */
@@ -313,23 +320,14 @@ h2 {
   font-size: 13px;
 }
 
-.card.most-popular:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
-}
-
-.card.most-popular p {
+.most-popular p {
   font-size: 15px;
-  margin: 0;
 }
 
 .most-popular img {
   height: 100%;
   width: 40%;
-  object-fit: cover;
-  border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-top-right-radius: 0;
-  padding: 5px;
 }
 
 .container {
@@ -338,30 +336,30 @@ h2 {
   justify-content: space-evenly;
   margin: 5px;
   margin-top: -2px;
-  margin-left: 14px;
   padding: 0px;
+}
+
+.img-top {
+  margin-left: 14px;
   height: 40%;
   width: 100%;
 }
 
-.container.img-left {
+.img-left {
   flex-wrap: wrap;
-  margin: 5px;
   margin-left: 10px;
-  padding: 0px;
   height: 100%;
   width: 55%;
 }
 
-.activities > .container {
+.activities-container {
   display: inline;
-  height: 50px;
   margin: 5px;
   padding: 8px;
-  width: 100%;
+  /* width: 100%; */
 }
 
-.activities > .container > h4 {
+.activities-container > h4 {
   font-size: clamp(90%, 1.2vw, 125%);
 }
 
@@ -436,7 +434,6 @@ ul > a:first-child {
 
 .nav-item > p {
   font-size: 17px;
-  font-weight: 500;
   margin: 0;
 }
 
