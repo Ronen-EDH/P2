@@ -256,7 +256,8 @@ nav {
 .accommodation {
   flex-wrap: wrap;
   height: 203px;
-  width: 244px;
+  width: 30%;
+  min-width: 220px;
   margin-bottom: 4%;
   font-size: 13px;
 }
@@ -339,6 +340,7 @@ h2 {
 
 .most-popular p {
   font-size: 15px;
+  margin-bottom: 30px;
 }
 
 .most-popular img {
@@ -350,13 +352,13 @@ h2 {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   margin: 5px;
-  margin-top: -2px;
   padding: 0px;
 }
 
 .img-top {
+  justify-content: space-evenly;
+  margin-top: -2px;
   margin-left: 14px;
   height: 40%;
   width: 100%;
@@ -367,6 +369,8 @@ h2 {
   margin-left: 10px;
   height: 100%;
   width: 55%;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 .activities-container {
@@ -428,6 +432,10 @@ footer {
   padding: 4%;
 }
 
+footer p {
+  font-weight: 500;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -440,6 +448,7 @@ ul {
 
 ul > a {
   margin-top: 15px;
+  font-weight: 500;
 }
 
 ul > a:first-child {
@@ -475,18 +484,62 @@ header > p {
   display: none;
 }
 
+.mobile-img {
+  display: none;
+}
 /* .container > p {
   font-size: clamp(90%, 1.5vw, 130%);
 } */
 
-@media (max-width: 1408px) {
-  .accommodations-card-wrapper {
-    justify-content: space-evenly;
-  }
-}
 @media (min-width: 1801px) {
   .accommodations-card-wrapper {
     column-gap: 15%;
+  }
+}
+
+@media (max-width: 1291.2px) {
+  .accommodations-card-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .most-popular {
+    height: 180px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .most-popular-card-wrapper {
+    flex-direction: row;
+  }
+
+  .accommodations-main {
+    margin: 0;
+  }
+
+  .most-popular {
+    flex-wrap: nowrap;
+    width: 31%;
+  }
+
+  .most-popular p {
+    margin-bottom: 0;
+  }
+
+  .img-left {
+    justify-content: space-evenly;
+    margin-top: -2px;
+    margin-left: 14px;
+    height: 40%;
+    width: 90%;
+  }
+  .most-popular img {
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
   }
 }
 
@@ -620,8 +673,16 @@ header > p {
     height: 24vh;
   }
 
-  .accommodations-main {
-    margin: 0;
+  .most-popular-card-wrapper {
+    flex-direction: column;
+  }
+
+  .mobile-img {
+    display: inline-block;
+  }
+
+  .desktop-img {
+    display: none;
   }
 
   .accommodations-main.section-wrapper {
