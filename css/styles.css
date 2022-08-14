@@ -14,10 +14,6 @@
   font-weight: 500;
 }
 
-/* * {
-  outline: 1px solid red;
-} */
-
 .wrapper {
   margin-left: 3.5%;
   margin-right: 3.5%;
@@ -61,10 +57,6 @@ nav {
   height: auto;
 }
 
-/* nav > img {
-  margin-left: -15px;
-} */
-
 :visited {
   color: black;
 }
@@ -105,9 +97,9 @@ nav {
 .search-input-field {
   border-color: var(--background-color);
   border-style: solid;
-  /* flex: 9; */
   padding-left: 13px;
   width: calc(100% - 155px);
+  /* flex: 9; */
 }
 
 .fa-location-dot {
@@ -142,7 +134,7 @@ nav {
   font-size: 18px;
 }
 
-.filter-button > p {
+.filter-text {
   margin-left: 12px;
   font-weight: 800;
 }
@@ -182,12 +174,6 @@ nav {
   align-items: flex-start;
 }
 
-/* .fa-solid.fa-info {
-  display: flex;
-  align-items: center;
-  color: var(--primary-color);
-} */
-
 .fa-info {
   margin-left: 1.5px;
   color: var(--primary-color);
@@ -216,8 +202,6 @@ nav {
 .accommodations-main {
   flex-wrap: wrap;
   /* justify-content: space-between; */
-  /* width: 64.6%; */
-  /* height: fit-content; */
   flex: 2;
   margin-right: 3%;
 }
@@ -234,9 +218,7 @@ nav {
 .most-popular-main {
   align-content: space-between;
   flex: 1;
-  /* justify-content: space-between;
-  height: fit-content;
-  width: 32.3%; */
+  /* justify-content: space-between; */
 }
 
 .most-popular-card-wrapper {
@@ -323,19 +305,15 @@ h2 {
   justify-content: space-between;
 }
 
-/* .rating-most-popular {
-  position: absolute;
-} */
-
 .most-popular {
   flex-wrap: wrap;
   flex-direction: column;
-  /* height: 25%; */
   height: 142px;
   width: 100%;
-  /* margin-top: -30%; */
   padding: 0;
   font-size: 13px;
+  /* height: 25%; */
+  /* margin-top: -30%; */
 }
 
 .most-popular p {
@@ -392,8 +370,6 @@ h2 {
   width: 100%;
   height: 500px;
   margin-top: 1%;
-  /* border-color: #0065fc;
-  border-style: solid; */
 }
 
 .activities img {
@@ -445,12 +421,12 @@ ul {
   justify-content: flex-start;
 }
 
-ul > a {
+ul > li {
   margin-top: 15px;
   font-weight: 500;
 }
 
-ul > a:first-child {
+ul > li:first-child {
   font-size: 18px;
   font-weight: 800;
   margin-top: 0;
@@ -490,12 +466,6 @@ header > p {
 .container > p {
   font-size: clamp(115%, 1vw, 130%);
 }
-
-/* @media (min-width: 1801px) {
-  .accommodations-card-wrapper {
-    column-gap: 5%;
-  }
-} */
 
 @media (max-width: 1412px) {
   .accommodations-card-wrapper {
@@ -734,14 +704,3 @@ header > p {
     margin-bottom: 50px;
   }
 }
-
-/* .card.most-popular {
-    height: 29vh;
-  } */
-
-/* p {
-  font-weight: 700;
-} */
-/* .card > img {
-  height: fit-content;
-} */
