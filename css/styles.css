@@ -424,6 +424,7 @@ ul > li:first-child {
 .nav-item > p {
   font-size: 17px;
   margin: 0;
+  font-weight: 500;
 }
 
 header > p {
