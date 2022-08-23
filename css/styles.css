@@ -96,6 +96,8 @@ nav {
   border-style: solid;
   padding-left: 13px;
   width: calc(100% - 155px);
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .fa-location-dot {
@@ -252,14 +254,15 @@ nav {
 }
 .card img {
   object-fit: cover;
-  padding: 5px;
+  padding: 2%;
   border-top-left-radius: 20px;
 }
 
 h4 {
-  font-size: clamp(110%, 1.8vw, 130%);
+  font-size: clamp(110%, 1.4vw, 130%);
   margin: 0;
 }
+
 h3 {
   font-weight: 800;
   font-size: 19px;
@@ -283,8 +286,11 @@ h2 {
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 101, 252, 0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.14);
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
+
 .accommodations-main > a {
   font-size: 20px;
   font-weight: 700;
@@ -305,7 +311,7 @@ h2 {
 }
 
 .most-popular p {
-  margin-bottom: 30px;
+  margin-bottom: 12%;
 }
 
 .most-popular img {
@@ -317,29 +323,36 @@ h2 {
 .container {
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  padding: 0px;
+  margin: 1%;
+  padding: 0%;
 }
 
 .img-top {
   justify-content: space-evenly;
-  margin-top: -2px;
-  margin-left: 14px;
+  margin-top: -1%;
+  margin-left: 6%;
   height: 40%;
   width: 100%;
 }
 
 .img-top p {
-  margin-bottom: 2px;
+  margin-bottom: 1%;
 }
 
 .img-left {
   flex-wrap: wrap;
-  margin-left: 10px;
   height: 100%;
   width: 54%;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-left: 2%;
+  margin-top: 3%;
+  /* A possible solution for the text alignment :
+  overflow: hidden;
+  white-space: nowrap; */
+}
+
+.img-left > h4 {
+  height: 30px;
 }
 
 .activities-container {
@@ -456,7 +469,7 @@ header > p {
   font-size: clamp(100%, 1vw, 115%);
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .main {
     flex-direction: column-reverse;
   }
@@ -476,7 +489,7 @@ header > p {
   .most-popular {
     flex-wrap: nowrap;
     width: 31%;
-    height: 203px;
+    height: 262px;
   }
 
   .most-popular p {
@@ -484,7 +497,6 @@ header > p {
   }
 
   .img-left {
-    justify-content: space-evenly;
     margin-top: -2px;
     margin-left: 14px;
     height: 40%;
@@ -496,6 +508,10 @@ header > p {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0;
   }
+
+  /* .img-left > h4 {
+    height: 30px;
+  } */
 }
 
 @media (max-width: 768px) {
@@ -597,6 +613,18 @@ header > p {
   .filter-button {
     margin-left: 0;
     margin-right: 20px;
+  }
+
+  .filter-button:nth-child(3) {
+    order: 2;
+  }
+
+  .filter-button:nth-child(4) {
+    order: 1;
+  }
+
+  .filter-button:nth-child(5) {
+    order: 3;
   }
 
   .info-wrapper {
