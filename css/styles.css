@@ -245,6 +245,7 @@ nav {
 
 .accommodation img {
   height: 60%;
+  padding: 2%;
 }
 
 .accommodation img,
@@ -254,7 +255,6 @@ nav {
 }
 .card img {
   object-fit: cover;
-  padding: 2%;
   border-top-left-radius: 20px;
 }
 
@@ -318,6 +318,7 @@ h2 {
   height: 100%;
   width: 40%;
   border-bottom-left-radius: 20px;
+  padding: 1%;
 }
 
 .container {
@@ -507,6 +508,7 @@ header > p {
     width: 100%;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0;
+    padding: 2%;
   }
 
   /* .img-left > h4 {
@@ -661,6 +663,11 @@ header > p {
 
   .most-popular-card-wrapper {
     flex-direction: column;
+  }
+
+  .accommodation img,
+  .most-popular img {
+    padding: 5px;
   }
 
   .mobile-img {
